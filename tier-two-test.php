@@ -7,7 +7,7 @@
 function clear_super_host_cache_before_wp_rocket_cache(){
     purge_superhoster_cache()
 }
-add_filter( 'before_rocket_clean_domain', 'clear_super_host_cache_before_wp_rocket_cache', 999 );
+add_action( 'before_rocket_clean_domain', 'clear_super_host_cache_before_wp_rocket_cache', 999 );
 
 /**
 * Question Two
